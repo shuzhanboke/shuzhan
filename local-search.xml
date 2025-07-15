@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>常用软件下载</title>
+    <link href="/2025/07/15/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/"/>
+    <url>/2025/07/15/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</url>
+    
+    <content type="html"><![CDATA[<h1 id="镜像地址"><a href="#镜像地址" class="headerlink" title="镜像地址"></a>镜像地址</h1><table><thead><tr><th>华为</th><th><a href="https://mirrors.huaweicloud.com/">https://mirrors.huaweicloud.com/</a></th><th>速度 No.1</th></tr></thead><tbody><tr><td>清华</td><td><a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></td><td>速度No.2</td></tr><tr><td>阿里云</td><td><a href="https://mirrors.aliyun.com/?source=5176.11533457&userCode=atie5674">https://mirrors.aliyun.com/</a></td><td>速度 NO.3</td></tr><tr><td>网易</td><td><a href="https://mirrors.163.com/">https://mirrors.163.com/</a></td><td>速度 No.4</td></tr><tr><td>中科大</td><td><a href="https://mirrors.ustc.edu.cn/">https://mirrors.ustc.edu.cn/</a></td><td>速度 No.5</td></tr></tbody></table><h2 id="frp下载地址："><a href="#frp下载地址：" class="headerlink" title="frp下载地址："></a>frp下载地址：</h2><h2 id="Releases-·-fatedier-frp"><a href="#Releases-·-fatedier-frp" class="headerlink" title="Releases · fatedier&#x2F;frp"></a><a href="https://github.com/fatedier/frp/releases">Releases · fatedier&#x2F;frp</a></h2><h2 id="websockify："><a href="#websockify：" class="headerlink" title="websockify："></a>websockify：</h2><h2 id="https-github-com-novnc-websockify-releases（-NOVNC访问地址-http-localhost-8080-vnc-html-）"><a href="#https-github-com-novnc-websockify-releases（-NOVNC访问地址-http-localhost-8080-vnc-html-）" class="headerlink" title="https://github.com/novnc/websockify/releases（[NOVNC访问地址](http://localhost:8080/vnc.html)）"></a><a href="https://github.com/novnc/websockify/releases%EF%BC%88[NOVNC%E8%AE%BF%E9%97%AE%E5%9C%B0%E5%9D%80](http://localhost:8080/vnc.html)%EF%BC%89">https://github.com/novnc/websockify/releases（[NOVNC访问地址](http://localhost:8080/vnc.html)）</a></h2><h2 id="novnc下载"><a href="#novnc下载" class="headerlink" title="novnc下载:"></a>novnc下载:</h2><h2 id="http-github-com-kanaka-noVNC-zipball-master"><a href="#http-github-com-kanaka-noVNC-zipball-master" class="headerlink" title="http://github.com/kanaka/noVNC/zipball/master"></a><a href="http://github.com/kanaka/noVNC/zipball/master">http://github.com/kanaka/noVNC/zipball/master</a></h2><h2 id="unbuntu下载："><a href="#unbuntu下载：" class="headerlink" title="unbuntu下载："></a>unbuntu下载：</h2><h2 id="Verifying-USTC-Mirrors-https-mirrors-ustc-edu-cn-ubuntu-releases-22-04-ubuntu-22-04-5-desktop-amd64-iso"><a href="#Verifying-USTC-Mirrors-https-mirrors-ustc-edu-cn-ubuntu-releases-22-04-ubuntu-22-04-5-desktop-amd64-iso" class="headerlink" title="[Verifying - USTC Mirrors](https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso"></a>[Verifying - USTC Mirrors](<a href="https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso">https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso</a></h2><h2 id="IDM下载并激活"><a href="#IDM下载并激活" class="headerlink" title="IDM下载并激活"></a>IDM下载并激活</h2><h3 id="方法一：一键激活"><a href="#方法一：一键激活" class="headerlink" title="方法一：一键激活"></a>方法一：一键激活</h3><p>1.IDM官网下载</p><p>2.powershell命令</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs text"># Enable TLSv1.2 for compatibility with older clients<br>[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12<br><br>$DownloadURL = &#x27;https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.cmd&#x27;<br><br>$FilePath = &quot;$env:TEMP\IAS.cmd&quot;<br><br>try &#123;<br>    Invoke-WebRequest -Uri $DownloadURL -UseBasicParsing -OutFile $FilePath<br>&#125; catch &#123;<br>    Write-Error $_<br>        Return<br>&#125;<br><br>if (Test-Path $FilePath) &#123;<br>    Start-Process $FilePath -Wait<br>    $item = Get-Item -LiteralPath $FilePath<br>    $item.Delete()<br>&#125;<br></code></pre></td></tr></table></figure><p>1️⃣复制下方代码到 <a href="https://zhida.zhihu.com/search?content_id=237638172&content_type=Article&match_order=1&q=PowerShell&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NTIyODM3NzIsInEiOiJQb3dlclNoZWxsIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjM3NjM4MTcyLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.9IdTiYcLXC87lf-7kOyLEiexxRxQLNcs8N3Zi90UYnE&zhida_source=entity">PowerShell</a> 并运行，然后在弹窗输入 1<br>2️⃣输入自定义用户名再按回车，激活完毕输入 6 退出<br>3️⃣激活之后可以在 IDM 查看激活信息，支持检测更新</p><h3 id="方法二：冻结试用期"><a href="#方法二：冻结试用期" class="headerlink" title="方法二：冻结试用期"></a>方法二：冻结试用期</h3><p>1.下载IDM</p><p>2.powershell命令：iex(irm is.gd&#x2F;idm_reset)</p><p>1️⃣复制下方代码到 <a href="https://zhida.zhihu.com/search?content_id=237638172&content_type=Article&match_order=1&q=PowerShell&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NTIyODM3NzIsInEiOiJQb3dlclNoZWxsIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjM3NjM4MTcyLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.9IdTiYcLXC87lf-7kOyLEiexxRxQLNcs8N3Zi90UYnE&zhida_source=entity">PowerShell</a> 并运行，然后在弹窗输入 2</p><h3 id="方法三：直接下载绿色破解版"><a href="#方法三：直接下载绿色破解版" class="headerlink" title="方法三：直接下载绿色破解版"></a>方法三：直接下载绿色破解版</h3><p>百度网盘：<a href="https://pan.baidu.com/s/1qpOv5085yCF7Lkw3RygYDg?pwd=6666">https://pan.baidu.com/s/1qpOv5085yCF7Lkw3RygYDg?pwd=6666</a></p><p>夸克网盘：<a href="https://pan.quark.cn/s/707d29c14d24">https://pan.quark.cn/s/707d29c14d24</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>软件</tag>
+      
+      <tag>工具</tag>
+      
+      <tag>资源</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>测试评论功能</title>
+    <link href="/2023/11/15/%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
+    <url>/2023/11/15/%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    
+    <content type="html"><![CDATA[<p>这是一篇用于测试评论功能的文章，请在此提交测试评论。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>测试</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
