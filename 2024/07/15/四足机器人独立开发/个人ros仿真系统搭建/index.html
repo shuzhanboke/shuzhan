@@ -19,24 +19,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="镜像地址   华为 https:&#x2F;&#x2F;mirrors.huaweicloud.com&#x2F; 速度 No.1    清华 https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F; 速度No.2   阿里云 https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F; 速度 NO.3   网易 https:&#x2F;&#x2F;mirrors.163.com&#x2F; 速度 No.4   中科大 https:&#x2F;&#x2F;mirr">
+    <meta name="description" content="ros仿真系统搭建一、Ubuntu 22.04 安装 ROS2 Humble1.确认语言环境为UTF-8locale 2.设置软件源ROS 2 apt 存储库添加到系统sudo apt install software-properties-commonsudo add-apt-repository universe 添加 ROS 2 GPG 密钥sudo apt update &amp;&amp;amp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用软件下载">
-<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/index.html">
+<meta property="og:title" content="ros仿真系统搭建">
+<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E4%B8%AA%E4%BA%BAros%E4%BB%BF%E7%9C%9F%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="镜像地址   华为 https:&#x2F;&#x2F;mirrors.huaweicloud.com&#x2F; 速度 No.1    清华 https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F; 速度No.2   阿里云 https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F; 速度 NO.3   网易 https:&#x2F;&#x2F;mirrors.163.com&#x2F; 速度 No.4   中科大 https:&#x2F;&#x2F;mirr">
+<meta property="og:description" content="ros仿真系统搭建一、Ubuntu 22.04 安装 ROS2 Humble1.确认语言环境为UTF-8locale 2.设置软件源ROS 2 apt 存储库添加到系统sudo apt install software-properties-commonsudo add-apt-repository universe 添加 ROS 2 GPG 密钥sudo apt update &amp;&amp;amp">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-15T02:41:19.000Z">
-<meta property="article:modified_time" content="2025-07-15T05:14:47.741Z">
+<meta property="article:modified_time" content="2025-07-15T05:44:34.341Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="软件">
-<meta property="article:tag" content="工具">
-<meta property="article:tag" content="资源">
+<meta property="article:tag" content="ROS">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>常用软件下载 - Hexo</title>
+  <title>ros仿真系统搭建 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="常用软件下载"></span>
+            <span id="subtitle" data-typed-text="ros仿真系统搭建"></span>
           
         </div>
 
@@ -225,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          334 字
+          918 字
         
       </span>
     
@@ -236,7 +234,7 @@
         
         
         
-          3 分钟
+          8 分钟
         
       </span>
     
@@ -273,50 +271,149 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">常用软件下载</h1>
+            <h1 id="seo-header">ros仿真系统搭建</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="镜像地址"><a href="#镜像地址" class="headerlink" title="镜像地址"></a>镜像地址</h1><table>
+                <h1 id="ros仿真系统搭建"><a href="#ros仿真系统搭建" class="headerlink" title="ros仿真系统搭建"></a>ros仿真系统搭建</h1><h1 id="一、Ubuntu-22-04-安装-ROS2-Humble"><a href="#一、Ubuntu-22-04-安装-ROS2-Humble" class="headerlink" title="一、Ubuntu 22.04 安装 ROS2 Humble"></a>一、Ubuntu 22.04 安装 ROS2 Humble</h1><h2 id="1-确认语言环境为UTF-8"><a href="#1-确认语言环境为UTF-8" class="headerlink" title="1.确认语言环境为UTF-8"></a>1.确认语言环境为UTF-8</h2><p>locale</p>
+<h2 id="2-设置软件源"><a href="#2-设置软件源" class="headerlink" title="2.设置软件源"></a>2.设置软件源</h2><h4 id="ROS-2-apt-存储库添加到系统"><a href="#ROS-2-apt-存储库添加到系统" class="headerlink" title="ROS 2 apt 存储库添加到系统"></a>ROS 2 apt 存储库添加到系统</h4><p>sudo apt install software-properties-common<br>sudo add-apt-repository universe</p>
+<h4 id="添加-ROS-2-GPG-密钥"><a href="#添加-ROS-2-GPG-密钥" class="headerlink" title="添加 ROS 2 GPG 密钥"></a>添加 ROS 2 GPG 密钥</h4><p>sudo apt update &amp;&amp; sudo apt install curl<br>sudo curl -sSL <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/ros/rosdistro/master/ros.key">https://raw.githubusercontent.com/ros/rosdistro/master/ros.key</a> -o &#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;ros-archive-keyring.gpg</p>
+<p>提示：如果上述命令执行失败，通常是由于 DNS 解析失败导致的，你可以使用 <a target="_blank" rel="noopener" href="https://getiot.tech/linux-command/nslookup/">nslookup</a> 命令查询 raw.githubusercontent.com 的域名信息，并将域名及其 IP 地址填到 <code>/etc/hosts</code> 文件进行手动解析。</p>
+<h4 id="存储库添加到系统的软件源列表"><a href="#存储库添加到系统的软件源列表" class="headerlink" title="存储库添加到系统的软件源列表"></a>存储库添加到系统的软件源列表</h4><p>echo “deb [arch&#x3D;$(dpkg –print-architecture) signed-by&#x3D;&#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;ros-archive-keyring.gpg] <a target="_blank" rel="noopener" href="http://packages.ros.org/ros2/ubuntu">http://packages.ros.org/ros2/ubuntu</a> $(. &#x2F;etc&#x2F;os-release &amp;&amp; echo $UBUNTU_CODENAME) main” | sudo tee &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;ros2.list &gt; &#x2F;dev&#x2F;null</p>
+<h2 id="3-安装-ROS-2-软件包"><a href="#3-安装-ROS-2-软件包" class="headerlink" title="3.安装 ROS 2 软件包"></a>3.安装 ROS 2 软件包</h2><h4 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h4><p>sudo apt update</p>
+<p>sudo apt upgrade</p>
+<h4 id="安装-ROS-Desktop-版本"><a href="#安装-ROS-Desktop-版本" class="headerlink" title="安装 ROS-Desktop 版本"></a>安装 ROS-Desktop 版本</h4><p>sudo apt install ros-humble-desktop</p>
+<h4 id="安装ROS-Base-版本"><a href="#安装ROS-Base-版本" class="headerlink" title="安装ROS- Base 版本"></a>安装ROS- Base 版本</h4><p>sudo apt install ros-humble-ros-base</p>
+<h4 id="安装ROS开发工具"><a href="#安装ROS开发工具" class="headerlink" title="安装ROS开发工具"></a>安装ROS开发工具</h4><p>sudo apt install ros-dev-tools</p>
+<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><p>source &#x2F;opt&#x2F;ros&#x2F;humble&#x2F;setup.bash</p>
+<h2 id="4-测试示例"><a href="#4-测试示例" class="headerlink" title="4.测试示例"></a>4.测试示例</h2><h4 id="生产者"><a href="#生产者" class="headerlink" title="生产者"></a>生产者</h4><p>source &#x2F;opt&#x2F;ros&#x2F;humble&#x2F;setup.bash<br>ros2 run demo_nodes_cpp talker</p>
+<h4 id="消费者"><a href="#消费者" class="headerlink" title="消费者"></a>消费者</h4><p>source &#x2F;opt&#x2F;ros&#x2F;humble&#x2F;setup.bash<br>ros2 run demo_nodes_py listener</p>
+<h2 id="5-ROS、模型全局变量配置"><a href="#5-ROS、模型全局变量配置" class="headerlink" title="5.ROS、模型全局变量配置"></a>5.ROS、模型全局变量配置</h2><h4 id="模型选择全局变量"><a href="#模型选择全局变量" class="headerlink" title="模型选择全局变量"></a>模型选择全局变量</h4><p>echo “export TURTLEBOT3_MODEL&#x3D;waffle” &gt;&gt; ~&#x2F;.bashrc</p>
+<h3 id="slam参数配置"><a href="#slam参数配置" class="headerlink" title="slam参数配置"></a>slam参数配置</h3><p>cat &gt; ~&#x2F;slam_params.yaml &lt;&lt;’EOF’<br>    &#x2F;**:<br>      ros__parameters:<br>       max_laser_range: 3.5<br>       min_laser_range: 0.1<br>       transform_publish_period: 0.05<br>       odom_frame: odom<br>       map_frame: map<br>       base_frame: base_link<br>       resolution: 0.05<br>       map_update_interval: 5.0<br>   EOF</p>
+<h2 id="6-安装仿真相关包"><a href="#6-安装仿真相关包" class="headerlink" title="6.安装仿真相关包"></a>6.安装仿真相关包</h2><p>sudo apt install  ros-humble-gazebo-ros-pkgs </p>
+<h2 id="7-四足机器人相关包"><a href="#7-四足机器人相关包" class="headerlink" title="7.四足机器人相关包"></a>7.四足机器人相关包</h2><p>sudo apt install ros-humble-turtlebot3-cartographer</p>
+<p>sudo apt install ros-humble-navigation2</p>
+<p>sudo apt install ros-humble-explore-lite(自主探索)</p>
+<p>\    ros-humble-robot-state-publisher \    ros-humble-xacro \    ros-humble-teleop-twist-keyboard \     \    ros-humble-slam-toolbox \  </p>
+<h2 id="8-插件"><a href="#8-插件" class="headerlink" title="8.插件"></a>8.插件</h2><p>sudo apt install yamllint</p>
+<p>作用：验证yaml文件格式</p>
+<p>示例：yamllint ~&#x2F;slam_params.yaml</p>
+<p>sudo apt install imagemagick-6.q16</p>
+<p>作用：显示图像文件</p>
+<p>示例：display turtlebot3_map.pgm</p>
+<p>sudo apt install net-tools</p>
+<p>作用：用于ssh登录</p>
+<p>示例：支持远程软件ssh登录</p>
+<h2 id="9-仿真测试"><a href="#9-仿真测试" class="headerlink" title="9.仿真测试"></a>9.仿真测试</h2><h4 id="启动仿真软件和世界模型"><a href="#启动仿真软件和世界模型" class="headerlink" title="启动仿真软件和世界模型"></a>启动仿真软件和世界模型</h4><p>ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py</p>
+<h4 id="通过navigation2-launch-py启动"><a href="#通过navigation2-launch-py启动" class="headerlink" title="通过navigation2.launch.py启动"></a>通过navigation2.launch.py启动</h4><ol>
+<li><p>地图服务器</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs smali">nav2_map_server<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>加载提供的 <code>turtlebot3_map_final.yaml</code></li>
+<li>发布 <code>/map</code> 话题（OccupancyGrid 格式）</li>
+</ul>
+</li>
+<li><p>AMCL 定位</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs smali">nav2_amcl<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>自适应蒙特卡洛定位算法</li>
+<li>订阅 <code>/scan</code> (激光数据) 和 <code>/tf</code> (坐标变换)</li>
+<li>发布 <code>amcl_pose</code> (估计的机器人位姿)</li>
+</ul>
+</li>
+<li><p>导航控制器</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs smali">nav2_controller<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>包含全局规划器（A*&#x2F;RRT*）和局部规划器（TEB&#x2F;DWB）</li>
+<li>生成 <code>/cmd_vel</code> 控制指令</li>
+</ul>
+</li>
+<li><p>生命周期管理</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs smali">nav2_lifecycle_manager<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>按顺序激活&#x2F;停用导航节点</li>
+</ul>
+</li>
+</ol>
+<p>ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:&#x3D;True   map:&#x3D;$HOME&#x2F;turtlebot3_map_final.yaml</p>
+<h2 id="10-查看话题"><a href="#10-查看话题" class="headerlink" title="10.查看话题"></a>10.查看话题</h2><p>ros2 topic list（查看全部话题）</p>
+<p>示例输出：</p>
+<p>&#x2F;camera&#x2F;camera_info </p>
+<p>&#x2F;camera</p>
+<p>&#x2F;image_raw </p>
+<p>&#x2F;clock &#x2F;cmd_vel </p>
+<p>&#x2F;imu </p>
+<p>&#x2F;joint_states </p>
+<p>&#x2F;odom </p>
+<p>&#x2F;parameter_events</p>
+<p> &#x2F;performance_metrics</p>
+<p> &#x2F;robot_description </p>
+<p>&#x2F;rosout</p>
+<p> &#x2F;scan </p>
+<p>&#x2F;tf </p>
+<p>&#x2F;tf_static</p>
+<table>
 <thead>
 <tr>
-<th>华为</th>
-<th><a target="_blank" rel="noopener" href="https://mirrors.huaweicloud.com/">https://mirrors.huaweicloud.com/</a></th>
-<th>速度 No.1</th>
+<th><strong><code>/scan</code></strong></th>
+<th><code>sensor_msgs/LaserScan</code></th>
+<th>Gazebo激光雷达插件</th>
+<th>提供2D激光雷达数据，用于导航避障和定位</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>清华</td>
-<td><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></td>
-<td>速度No.2</td>
+<td><strong><code>/odom</code></strong></td>
+<td><code>nav_msgs/Odometry</code></td>
+<td>机器人底盘仿真节点</td>
+<td>轮式编码器数据，短程运动估计（易累积误差）</td>
 </tr>
 <tr>
-<td>阿里云</td>
-<td><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/?source=5176.11533457&userCode=atie5674">https://mirrors.aliyun.com/</a></td>
-<td>速度 NO.3</td>
+<td><strong><code>/imu</code></strong></td>
+<td><code>sensor_msgs/Imu</code></td>
+<td>IMU传感器插件</td>
+<td>提供加速度&#x2F;角速度数据，辅助定位</td>
 </tr>
 <tr>
-<td>网易</td>
-<td><a target="_blank" rel="noopener" href="https://mirrors.163.com/">https://mirrors.163.com/</a></td>
-<td>速度 No.4</td>
+<td><strong><code>/cmd_vel</code></strong></td>
+<td><code>geometry_msgs/Twist</code></td>
+<td>导航控制器节点</td>
+<td>接收速度指令（线速度+角速度）控制机器人运动</td>
 </tr>
 <tr>
-<td>中科大</td>
-<td><a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/">https://mirrors.ustc.edu.cn/</a></td>
-<td>速度 No.5</td>
+<td><strong>&amp; <code>/tf_static</code></strong></td>
+<td><code>tf2_msgs/TFMessage</code></td>
+<td>机器人状态发布节点</td>
+<td>坐标系变换树，维护各部件（base_link, laser, odom等）的空间关系</td>
 </tr>
 </tbody></table>
-<h2 id="frp下载地址："><a href="#frp下载地址：" class="headerlink" title="frp下载地址："></a>frp下载地址：</h2><h2 id="Releases-·-fatedier-frp"><a href="#Releases-·-fatedier-frp" class="headerlink" title="Releases · fatedier&#x2F;frp"></a><a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">Releases · fatedier&#x2F;frp</a></h2><h2 id="websockify："><a href="#websockify：" class="headerlink" title="websockify："></a>websockify：</h2><h2 id="https-github-com-novnc-websockify-releases（-NOVNC访问地址-http-localhost-8080-vnc-html-）"><a href="#https-github-com-novnc-websockify-releases（-NOVNC访问地址-http-localhost-8080-vnc-html-）" class="headerlink" title="https://github.com/novnc/websockify/releases（[NOVNC访问地址](http://localhost:8080/vnc.html)）"></a><a target="_blank" rel="noopener" href="https://github.com/novnc/websockify/releases%EF%BC%88[NOVNC%E8%AE%BF%E9%97%AE%E5%9C%B0%E5%9D%80](http://localhost:8080/vnc.html)%EF%BC%89">https://github.com/novnc/websockify/releases（[NOVNC访问地址](http://localhost:8080/vnc.html)）</a></h2><h2 id="novnc下载"><a href="#novnc下载" class="headerlink" title="novnc下载:"></a>novnc下载:</h2><h2 id="http-github-com-kanaka-noVNC-zipball-master"><a href="#http-github-com-kanaka-noVNC-zipball-master" class="headerlink" title="http://github.com/kanaka/noVNC/zipball/master"></a><a target="_blank" rel="noopener" href="http://github.com/kanaka/noVNC/zipball/master">http://github.com/kanaka/noVNC/zipball/master</a></h2><h2 id="unbuntu下载："><a href="#unbuntu下载：" class="headerlink" title="unbuntu下载："></a>unbuntu下载：</h2><h2 id="Verifying-USTC-Mirrors-https-mirrors-ustc-edu-cn-ubuntu-releases-22-04-ubuntu-22-04-5-desktop-amd64-iso"><a href="#Verifying-USTC-Mirrors-https-mirrors-ustc-edu-cn-ubuntu-releases-22-04-ubuntu-22-04-5-desktop-amd64-iso" class="headerlink" title="[Verifying - USTC Mirrors](https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso"></a>[Verifying - USTC Mirrors](<a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso">https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.5-desktop-amd64.iso</a></h2><h2 id="IDM下载并激活"><a href="#IDM下载并激活" class="headerlink" title="IDM下载并激活"></a>IDM下载并激活</h2><h3 id="方法一：一键激活"><a href="#方法一：一键激活" class="headerlink" title="方法一：一键激活"></a>方法一：一键激活</h3><p>1.IDM官网下载</p>
-<p>2.powershell命令</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs text"># Enable TLSv1.2 for compatibility with older clients<br>[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12<br><br>$DownloadURL = &#x27;https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.cmd&#x27;<br><br>$FilePath = &quot;$env:TEMP\IAS.cmd&quot;<br><br>try &#123;<br>    Invoke-WebRequest -Uri $DownloadURL -UseBasicParsing -OutFile $FilePath<br>&#125; catch &#123;<br>    Write-Error $_<br>        Return<br>&#125;<br><br>if (Test-Path $FilePath) &#123;<br>    Start-Process $FilePath -Wait<br>    $item = Get-Item -LiteralPath $FilePath<br>    $item.Delete()<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>1️⃣复制下方代码到 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=237638172&content_type=Article&match_order=1&q=PowerShell&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NTIyODM3NzIsInEiOiJQb3dlclNoZWxsIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjM3NjM4MTcyLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.9IdTiYcLXC87lf-7kOyLEiexxRxQLNcs8N3Zi90UYnE&zhida_source=entity">PowerShell</a> 并运行，然后在弹窗输入 1<br>2️⃣输入自定义用户名再按回车，激活完毕输入 6 退出<br>3️⃣激活之后可以在 IDM 查看激活信息，支持检测更新</p>
-<h3 id="方法二：冻结试用期"><a href="#方法二：冻结试用期" class="headerlink" title="方法二：冻结试用期"></a>方法二：冻结试用期</h3><p>1.下载IDM</p>
-<p>2.powershell命令：iex(irm is.gd&#x2F;idm_reset)</p>
-<p>1️⃣复制下方代码到 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=237638172&content_type=Article&match_order=1&q=PowerShell&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NTIyODM3NzIsInEiOiJQb3dlclNoZWxsIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjM3NjM4MTcyLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.9IdTiYcLXC87lf-7kOyLEiexxRxQLNcs8N3Zi90UYnE&zhida_source=entity">PowerShell</a> 并运行，然后在弹窗输入 2</p>
-<h3 id="方法三：直接下载绿色破解版"><a href="#方法三：直接下载绿色破解版" class="headerlink" title="方法三：直接下载绿色破解版"></a>方法三：直接下载绿色破解版</h3><p>百度网盘：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1qpOv5085yCF7Lkw3RygYDg?pwd=6666">https://pan.baidu.com/s/1qpOv5085yCF7Lkw3RygYDg?pwd=6666</a></p>
-<p>夸克网盘：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/707d29c14d24">https://pan.quark.cn/s/707d29c14d24</a></p>
+<p>ros2 topic echo &#x2F;scan（话题名） –no-arr（查看其中一个话题）</p>
+<p>示例输出：</p>
+<p>header:<br>  stamp:<br>    sec: 195<br>    nanosec: 782000000<br>  frame_id: base_scan<br>angle_min: 0.0<br>angle_max: 6.28000020980835<br>angle_increment: 0.01749303564429283<br>time_increment: 0.0<br>scan_time: 0.0<br>range_min: 0.11999999731779099<br>range_max: 3.5<br>ranges: ‘&lt;sequence type: float, length: 360&gt;’<br>intensities: ‘&lt;sequence type: float, length: 360&gt;’</p>
+<p>11.扫图、保存</p>
+<p>启动slam节点</p>
+<p>方案一:</p>
+<p>ros2 launch turtlebot3_cartographer cartographer.launch.py \  use_sim_time:&#x3D;true \  configuration_basename:&#x3D;turtlebot3_lds_2d.lua</p>
+<p>方案二：</p>
+<p>ros2 launch slam_toolbox online_async_launch.py \  use_sim_time:&#x3D;true \  params_file:&#x3D;&#x2F;opt&#x2F;ros&#x2F;humble&#x2F;share&#x2F;turtlebot3_navigation2&#x2F;param&#x2F;slam_toolbox.yaml</p>
+<p>加载SLAM专用配置</p>
+<p>ros2 run rviz2 rviz2 -d $(ros2 pkg prefix turtlebot3_navigation2)&#x2F;share&#x2F;turtlebot3_navigation2&#x2F;rviz&#x2F;turtlebot3_slam.rviz</p>
+<p>键盘控制</p>
+<p>ros2 run turtlebot3_teleop teleop_keyboard</p>
+<p>自动探索</p>
+<p>ros2 launch explore_lite explore.launch.py</p>
+<p>保存地图</p>
+<p>ros2 run nav2_map_server map_saver_cli -f my_map(地图名字)</p>
+<p>自动探索</p>
+<h1 id="Terminal-1-启动Gazebo仿真"><a href="#Terminal-1-启动Gazebo仿真" class="headerlink" title="Terminal 1: 启动Gazebo仿真"></a>Terminal 1: 启动Gazebo仿真</h1><p>ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py</p>
+<h1 id="Terminal-2-启动SLAM"><a href="#Terminal-2-启动SLAM" class="headerlink" title="Terminal 2: 启动SLAM"></a>Terminal 2: 启动SLAM</h1><p>ros2 launch slam_toolbox online_async_launch.py</p>
+<h1 id="Terminal-3-启动Nav2"><a href="#Terminal-3-启动Nav2" class="headerlink" title="Terminal 3: 启动Nav2"></a>Terminal 3: 启动Nav2</h1><p>ros2 launch nav2_bringup navigation_launch.py</p>
+<h1 id="Terminal-4-启动explore-lite"><a href="#Terminal-4-启动explore-lite" class="headerlink" title="Terminal 4: 启动explore_lite"></a>Terminal 4: 启动explore_lite</h1><p>ros2 launch explore_lite explore.launch.py</p>
+<h1 id="Terminal-5-可视化Rviz"><a href="#Terminal-5-可视化Rviz" class="headerlink" title="Terminal 5: 可视化Rviz"></a>Terminal 5: 可视化Rviz</h1><p>ros2 launch nav2_bringup rviz_launch.py</p>
 
                 
               </div>
@@ -350,11 +447,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%BD%AF%E4%BB%B6/" class="print-no-link">#软件</a>
-      
-        <a href="/tags/%E5%B7%A5%E5%85%B7/" class="print-no-link">#工具</a>
-      
-        <a href="/tags/%E8%B5%84%E6%BA%90/" class="print-no-link">#资源</a>
+        <a href="/tags/ROS/" class="print-no-link">#ROS</a>
       
     </div>
   
@@ -366,8 +459,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>常用软件下载</div>
-      <div>https://shuzhanboke.github.io/2024/07/15/常用软件下载/</div>
+      <div>ros仿真系统搭建</div>
+      <div>https://shuzhanboke.github.io/2024/07/15/四足机器人独立开发/个人ros仿真系统搭建/</div>
     </div>
     <div class="license-meta">
       
@@ -411,12 +504,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/" title="ros仿真系统搭建">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ros仿真系统搭建</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/15/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="常用命令">
-                        <span class="hidden-mobile">常用命令</span>
+                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A1%AC%E4%BB%B6%E6%94%AF%E6%8C%81/" title="四足机器人仿真环境硬件支持">
+                        <span class="hidden-mobile">四足机器人仿真环境硬件支持</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

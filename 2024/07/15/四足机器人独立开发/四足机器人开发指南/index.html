@@ -19,21 +19,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="123456title: 常用命令date: 2024-07-15 10:41:19tags: [boke]categories: [技术分享]toc: truecomments: true    linux        全局搜索   java ps -ef | grep java   文件夹授权 chmod +x   脚本转换 dos2unix  脚本名   强制终止进程 pkill -9 -">
+    <meta name="description" content="四足机器人开发指南要开发一个完整的四足机器狗实现自动避障和自主导航，需要系统性地整合硬件和软件组件。以下是专业级的开发框架指南：  一、硬件系统（模块化选型）1. 核心运动硬件   组件 推荐型号&#x2F;规格 作用    主控制器 NVIDIA Jetson AGX Orin&#x2F;Intel NUC 11 处理导航算法与实时控制   电机驱动器 MIT Mini Cheetah驱动器&amp;#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://shuzhanboke.github.io/2025/05/24/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="ros仿真系统搭建">
+<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="123456title: 常用命令date: 2024-07-15 10:41:19tags: [boke]categories: [技术分享]toc: truecomments: true    linux        全局搜索   java ps -ef | grep java   文件夹授权 chmod +x   脚本转换 dos2unix  脚本名   强制终止进程 pkill -9 -">
+<meta property="og:description" content="四足机器人开发指南要开发一个完整的四足机器狗实现自动避障和自主导航，需要系统性地整合硬件和软件组件。以下是专业级的开发框架指南：  一、硬件系统（模块化选型）1. 核心运动硬件   组件 推荐型号&#x2F;规格 作用    主控制器 NVIDIA Jetson AGX Orin&#x2F;Intel NUC 11 处理导航算法与实时控制   电机驱动器 MIT Mini Cheetah驱动器&amp;#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-05-24T09:23:54.605Z">
-<meta property="article:modified_time" content="2025-07-15T05:18:19.364Z">
+<meta property="article:published_time" content="2024-07-15T02:41:19.000Z">
+<meta property="article:modified_time" content="2025-07-15T05:44:02.138Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ROS">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>ros仿真系统搭建 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="ros仿真系统搭建"></span>
           
         </div>
 
@@ -210,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-24 17:23" pubdate>
-          2025年5月24日 下午
+        <time datetime="2024-07-15 10:41" pubdate>
+          2024年7月15日 上午
         </time>
       </span>
     
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          326 字
+          914 字
         
       </span>
     
@@ -233,7 +234,7 @@
         
         
         
-          3 分钟
+          8 分钟
         
       </span>
     
@@ -270,148 +271,240 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">ros仿真系统搭建</h1>
             
             
               <div class="markdown-body">
                 
-                <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html">title: 常用命令<br>date: 2024-07-15 10:41:19<br>tags: [boke]<br>categories: [技术分享]<br>toc: true<br>comments: true<br></code></pre></td></tr></table></figure>
-
-
-
-<h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a><strong>linux</strong></h1><table>
+                <h1 id="四足机器人开发指南"><a href="#四足机器人开发指南" class="headerlink" title="四足机器人开发指南"></a>四足机器人开发指南</h1><p>要开发一个完整的四足机器狗实现自动避障和自主导航，需要系统性地整合硬件和软件组件。以下是专业级的开发框架指南：</p>
+<hr>
+<h3 id="一、硬件系统（模块化选型）"><a href="#一、硬件系统（模块化选型）" class="headerlink" title="一、硬件系统（模块化选型）"></a><strong>一、硬件系统（模块化选型）</strong></h3><h4 id="1-核心运动硬件"><a href="#1-核心运动硬件" class="headerlink" title="1. 核心运动硬件"></a><strong>1. 核心运动硬件</strong></h4><table>
 <thead>
 <tr>
-<th align="left"></th>
-<th></th>
+<th>组件</th>
+<th>推荐型号&#x2F;规格</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">全局搜索   java</td>
-<td>ps -ef | grep java</td>
+<td><strong>主控制器</strong></td>
+<td>NVIDIA Jetson AGX Orin&#x2F;Intel NUC 11</td>
+<td>处理导航算法与实时控制</td>
 </tr>
 <tr>
-<td align="left">文件夹授权</td>
-<td>chmod +x</td>
+<td><strong>电机驱动器</strong></td>
+<td>MIT Mini Cheetah驱动器&#x2F;TMOTOR AK60-6</td>
+<td>高带宽腿部伺服控制</td>
 </tr>
 <tr>
-<td align="left">脚本转换</td>
-<td>dos2unix  脚本名</td>
+<td><strong>关节电机</strong></td>
+<td>高扭矩无刷电机（如T-Motor U8）</td>
+<td>提供精确的关节力矩控制</td>
 </tr>
 <tr>
-<td align="left">强制终止进程</td>
-<td>pkill -9 -f “webrtc-streamer -H 0.0.0.0:8003”</td>
-</tr>
-<tr>
-<td align="left">查看端口占用信息</td>
-<td>sudo lsof -i :8003</td>
-</tr>
-<tr>
-<td align="left">查看实时日志</td>
-<td>tail -f</td>
-</tr>
-<tr>
-<td align="left">查看限定数量的日志</td>
-<td>tail -n 5  webrtc.log</td>
-</tr>
-<tr>
-<td align="left">解压gz文件</td>
-<td>tar -xzvf webrtc-streamer-v0.7.0-Linux-arm64-Release.tar.gz</td>
-</tr>
-<tr>
-<td align="left">查看当前ip</td>
-<td>ifconfig</td>
-</tr>
-<tr>
-<td align="left">查看网络连接</td>
-<td>telnet 192.168.31.69 8080</td>
-</tr>
-<tr>
-<td align="left">发送 POST 请求</td>
-<td>curl -v -X POST -H “Content-Type: application&#x2F;json” -d ‘{“command”:”start”}’ <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">保存响应内容到文件</td>
-<td>curl -v -o response.txt <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">仅显示 HTTP 状态码</td>
-<td>curl -s -o &#x2F;dev&#x2F;null -w “%{http_code}” <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">重新加载服务</td>
-<td>sudo systemctl daemon-reload</td>
-</tr>
-<tr>
-<td align="left">检查程序日志</td>
-<td>journalctl -u robot_server -b</td>
-</tr>
-<tr>
-<td align="left">卸载服务</td>
-<td>sudo systemctl disable robot_server                                                                                      sudo rm&#x2F;etc&#x2F;systemd&#x2F;system&#x2F;robot_server.service</td>
-</tr>
-<tr>
-<td align="left">查看磁盘空间</td>
-<td>df -h</td>
-</tr>
-<tr>
-<td align="left">分析磁盘使用情况</td>
-<td>sudo du -h –max-depth&#x3D;1 &#x2F; | sort -h（逐级列出 <code>/</code> 根目录下各子目录的占用空间）</td>
-</tr>
-<tr>
-<td align="left">显示文件详细信息</td>
-<td>ls -l</td>
-</tr>
-<tr>
-<td align="left">强制覆盖原有软连接</td>
-<td>ln -sf &#x2F;home&#x2F;ysc&#x2F;jy_cog&#x2F;system&#x2F;map  &#x2F;home&#x2F;ysc&#x2F;jy_cog&#x2F;system&#x2F;maps&#x2F;ProjectName-LocationName-20250607-175711</td>
+<td><strong>IMU</strong></td>
+<td>BMI088&#x2F;BMI085 + ADIS16470（冗余设计）</td>
+<td>姿态估计与运动稳定性</td>
 </tr>
 </tbody></table>
-<h1 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h1><table>
+<h4 id="2-感知传感器"><a href="#2-感知传感器" class="headerlink" title="2. 感知传感器"></a><strong>2. 感知传感器</strong></h4><table>
 <thead>
 <tr>
-<th>强制终止进程</th>
-<th>taskkill -f -im nginx.exe</th>
+<th>传感器类型</th>
+<th>推荐方案</th>
+<th>性能要求</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>查看nginx进程</td>
-<td>tasklist | findstr “nginx”</td>
+<td><strong>主激光雷达</strong></td>
+<td>Livox Mid-40&#x2F;Velodyne VLP-16</td>
+<td>360°扫描，10Hz以上更新率</td>
 </tr>
 <tr>
-<td>查看端口情况</td>
-<td>netstat -ano   |findstr 8004</td>
+<td><strong>辅助深度相机</strong></td>
+<td>Intel RealSense D455&#x2F;OAK-D Pro</td>
+<td>RGB-D，全局快门，&lt;5ms延时</td>
 </tr>
 <tr>
-<td>vnc（win）</td>
-<td>node websockify.js 8080 127.0.0.1:5900 –web “C:\Users\linsen\Desktop\java\gongju\websockify\noVNC-master”</td>
+<td><strong>超声波传感器</strong></td>
+<td>MaxBotix MB1242</td>
+<td>近距离盲区检测（30-500cm）</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td><strong>接触传感器</strong></td>
+<td>六轴力传感器（如OnRobot HEX-E）</td>
+<td>足端触地检测与力控</td>
 </tr>
 </tbody></table>
-<h1 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h1><h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1>
+<h4 id="3-电源与通信"><a href="#3-电源与通信" class="headerlink" title="3. 电源与通信"></a><strong>3. 电源与通信</strong></h4><ul>
+<li><strong>电池系统</strong>：12S锂聚合物电池（50C放电）+ 分布式电源管理模块</li>
+<li><strong>通信模块</strong>：WiFi 6（AX200）+ 4G LTE双冗余链路</li>
+</ul>
+<hr>
+<h3 id="二、软件架构（ROS-2-Humble）"><a href="#二、软件架构（ROS-2-Humble）" class="headerlink" title="二、软件架构（ROS 2 Humble）"></a><strong>二、软件架构（ROS 2 Humble）</strong></h3><h4 id="1-核心功能包"><a href="#1-核心功能包" class="headerlink" title="1. 核心功能包"></a><strong>1. 核心功能包</strong></h4><pre><code class=" mermaid">graph TB
+    A[运动控制] --&gt;|LCM协议| B[MIT Cheetah Software]
+    C[环境感知] --&gt;|PointCloud2| D[Fast-LIO2]
+    D --&gt;|位姿| E[Voxgraph SLAM]
+    E --&gt;|地图| F[TeB Planner]
+    F --&gt;|控制指令| A
+</code></pre>
+
+<h4 id="2-关键算法选型"><a href="#2-关键算法选型" class="headerlink" title="2. 关键算法选型"></a><strong>2. 关键算法选型</strong></h4><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>推荐算法&#x2F;框架</th>
+<th>优化方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>状态估计</strong></td>
+<td>Contact-IMU-EKF</td>
+<td>融合足端接触检测</td>
+</tr>
+<tr>
+<td><strong>SLAM</strong></td>
+<td>Voxgraph + FAST-LIO2</td>
+<td>多传感器紧耦合</td>
+</tr>
+<tr>
+<td><strong>运动规划</strong></td>
+<td>Convex MPC + RaiSim仿真</td>
+<td>动态地形适应</td>
+</tr>
+<tr>
+<td><strong>避障</strong></td>
+<td>3D动态障碍物预测（使用PyTorch）</td>
+<td>时空联合推理</td>
+</tr>
+</tbody></table>
+<h4 id="3-开发工具链"><a href="#3-开发工具链" class="headerlink" title="3. 开发工具链"></a><strong>3. 开发工具链</strong></h4><ul>
+<li><strong>仿真环境</strong>：Isaac Sim + ROS 2 Bridge</li>
+<li><strong>调试工具</strong>：PlotJuggler + Foxglove Studio</li>
+<li><strong>CI&#x2F;CD</strong>：GitLab Runner + Docker容器化部署</li>
+</ul>
+<hr>
+<h3 id="三、系统集成要点"><a href="#三、系统集成要点" class="headerlink" title="三、系统集成要点"></a><strong>三、系统集成要点</strong></h3><h4 id="1-时间同步方案"><a href="#1-时间同步方案" class="headerlink" title="1. 时间同步方案"></a><strong>1. 时间同步方案</strong></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># PTP精密时间协议配置</span><br><span class="hljs-built_in">sudo</span> apt install linuxptp<br><span class="hljs-built_in">sudo</span> ptp4l -i eth0 -S -m<br></code></pre></td></tr></table></figure>
+
+<h4 id="2-实时性保障"><a href="#2-实时性保障" class="headerlink" title="2. 实时性保障"></a><strong>2. 实时性保障</strong></h4><ul>
+<li>内核补丁：<code>RT_PREEMPT</code>补丁 + Xenomai3</li>
+<li>进程优先级策略：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">sched_param</span> <span class="hljs-title">param</span> =</span> &#123;.sched_priority = <span class="hljs-number">99</span>&#125;;<br>sched_setscheduler(<span class="hljs-number">0</span>, SCHED_FIFO, &amp;param);<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="3-安全机制"><a href="#3-安全机制" class="headerlink" title="3. 安全机制"></a><strong>3. 安全机制</strong></h4><ul>
+<li>硬件看门狗：STM32独立监控核心</li>
+<li>软件心跳包：自定义ROS 2 Lifecycle Manager</li>
+</ul>
+<hr>
+<h3 id="四、开发路线图（分阶段实现）"><a href="#四、开发路线图（分阶段实现）" class="headerlink" title="四、开发路线图（分阶段实现）"></a><strong>四、开发路线图（分阶段实现）</strong></h3><ol>
+<li><p><strong>Phase 1（基础运动）</strong></p>
+<ul>
+<li>实现基于MIT Cheetah代码库的步态控制</li>
+<li>在RaiSim中验证斜坡行走能力</li>
+</ul>
+</li>
+<li><p><strong>Phase 2（环境感知）</strong></p>
+<ul>
+<li>搭建Fast-LIO2的实时点云处理管线</li>
+<li>开发基于TSDF的3D代价地图</li>
+</ul>
+</li>
+<li><p><strong>Phase 3（自主导航）</strong></p>
+<ul>
+<li>集成Chomp+TeB的混合规划器</li>
+<li>实现动态障碍物速度障碍法（VO）避障</li>
+</ul>
+</li>
+<li><p><strong>Phase 4（系统优化）</strong></p>
+<ul>
+<li>部署量化后的PyTorch避障模型（TensorRT加速）</li>
+<li>通过ISAAC SIM进行百万次蒙特卡洛测试</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="五、关键挑战与解决方案"><a href="#五、关键挑战与解决方案" class="headerlink" title="五、关键挑战与解决方案"></a><strong>五、关键挑战与解决方案</strong></h3><table>
+<thead>
+<tr>
+<th>挑战点</th>
+<th>技术方案</th>
+<th>实施案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>动态地形适应</strong></td>
+<td>在线足端轨迹优化（LQR调节）</td>
+<td>ANYmal野外行走</td>
+</tr>
+<tr>
+<td><strong>多传感器标定</strong></td>
+<td>基于AprilTag的自动标定系统</td>
+<td>Boston Dynamics Atlas</td>
+</tr>
+<tr>
+<td><strong>计算资源竞争</strong></td>
+<td>ROS 2 QoS策略+DPDK加速</td>
+<td>MIT Mini Cheetah 2</td>
+</tr>
+<tr>
+<td><strong>电池管理</strong></td>
+<td>自适应运动功耗调节算法</td>
+<td>Spot的Thermal Throttling</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="六、成本估算（参考）"><a href="#六、成本估算（参考）" class="headerlink" title="六、成本估算（参考）"></a><strong>六、成本估算（参考）</strong></h3><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>中端配置预算（USD）</th>
+<th>高端配置预算（USD）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>机械结构</td>
+<td>8,000</td>
+<td>25,000</td>
+</tr>
+<tr>
+<td>电子系统</td>
+<td>6,500</td>
+<td>18,000</td>
+</tr>
+<tr>
+<td>软件开发</td>
+<td>15,000</td>
+<td>50,000+</td>
+</tr>
+<tr>
+<td>测试验证</td>
+<td>5,000</td>
+<td>20,000</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="七、推荐学习资源"><a href="#七、推荐学习资源" class="headerlink" title="七、推荐学习资源"></a><strong>七、推荐学习资源</strong></h3><ol>
+<li><p><strong>代码库</strong>：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/mit-biomimetics/Cheetah-Software">MIT Cheetah Software</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hku-mars/FAST_LIO">Fast-LIO2</a></li>
+</ul>
+</li>
+<li><p><strong>论文</strong>：</p>
+<ul>
+<li>《Dynamic Locomotion in the MIT Cheetah 3》</li>
+<li>《Robust Legged Navigation》</li>
+</ul>
+</li>
+<li><p><strong>课程</strong>：</p>
+<ul>
+<li>ETH Zurich《Advanced Robotics》</li>
+<li>Coursera《Robotics: Perception》</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>通过以上框架，您可以系统性地构建一个具备工业级性能的四足机器人系统。实际开发中建议优先在仿真环境中验证核心算法（Isaac Sim或Gazebo+ROS 2），再逐步迁移到实体机器人。对于初创团队，可考虑使用Unitree Go1等开发平台加速原型验证。</p>
+
                 
               </div>
             
@@ -419,6 +512,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" class="category-chain-item">技术分享</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/ROS/" class="print-no-link">#ROS</a>
+      
+    </div>
   
 </div>
 
@@ -428,8 +549,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://shuzhanboke.github.io/2025/05/24/常用命令/</div>
+      <div>ros仿真系统搭建</div>
+      <div>https://shuzhanboke.github.io/2024/07/15/四足机器人独立开发/四足机器人开发指南/</div>
     </div>
     <div class="license-meta">
       
@@ -441,7 +562,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月24日</div>
+          <div>2024年7月15日</div>
         </div>
       
       
@@ -473,9 +594,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/25/%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%8BUbuntu%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/" title="">
+                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/ROS%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/" title="ROS系统环境搭建">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">ROS系统环境搭建</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -483,8 +604,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/15/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" title="常用软件下载">
-                        <span class="hidden-mobile">常用软件下载</span>
+                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E4%B8%AA%E4%BA%BAros%E4%BB%BF%E7%9C%9F%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/" title="ros仿真系统搭建">
+                        <span class="hidden-mobile">ros仿真系统搭建</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

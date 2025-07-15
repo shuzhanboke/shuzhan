@@ -19,21 +19,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="123456title: giscus评论系统date: 2024-07-15 10:41:19tags: [boke]categories: [技术分享]toc: truecomments: true  giscus">
+    <meta name="description" content="ROS系统搭建小乌龟：rosrun turtlesim turtlesim_node 小乌龟运动控制：rosrun turtlesim turtle_teleop_key cmd_vel:&#x3D;&#x2F;turtle1&#x2F;cmd_vel 小乌龟节点监控：rostopic echo &#x2F;turtle1&#x2F;pose 控制一个小乌龟一直转圈：rostopic pub -r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://shuzhanboke.github.io/2025/07/15/giscus/index.html">
+<meta property="og:title" content="ROS系统环境搭建">
+<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/ROS%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="123456title: giscus评论系统date: 2024-07-15 10:41:19tags: [boke]categories: [技术分享]toc: truecomments: true  giscus">
+<meta property="og:description" content="ROS系统搭建小乌龟：rosrun turtlesim turtlesim_node 小乌龟运动控制：rosrun turtlesim turtle_teleop_key cmd_vel:&#x3D;&#x2F;turtle1&#x2F;cmd_vel 小乌龟节点监控：rostopic echo &#x2F;turtle1&#x2F;pose 控制一个小乌龟一直转圈：rostopic pub -r">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-07-15T05:11:27.079Z">
-<meta property="article:modified_time" content="2025-07-15T05:14:28.256Z">
+<meta property="article:published_time" content="2024-07-15T02:41:19.000Z">
+<meta property="article:modified_time" content="2025-07-15T05:46:15.674Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ROS">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>ROS系统环境搭建 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="ROS系统环境搭建"></span>
           
         </div>
 
@@ -210,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-07-15 13:11" pubdate>
-          2025年7月15日 下午
+        <time datetime="2024-07-15 10:41" pubdate>
+          2024年7月15日 上午
         </time>
       </span>
     
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          20 字
+          517 字
         
       </span>
     
@@ -233,7 +234,7 @@
         
         
         
-          1 分钟
+          5 分钟
         
       </span>
     
@@ -270,29 +271,49 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">ROS系统环境搭建</h1>
             
             
               <div class="markdown-body">
                 
-                <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs HTML">title: giscus评论系统<br>date: 2024-07-15 10:41:19<br>tags: [boke]<br>categories: [技术分享]<br>toc: true<br>comments: true<br></code></pre></td></tr></table></figure>
+                <h1 id="ROS系统搭建"><a href="#ROS系统搭建" class="headerlink" title="ROS系统搭建"></a>ROS系统搭建</h1><h2 id="小乌龟："><a href="#小乌龟：" class="headerlink" title="小乌龟："></a>小乌龟：</h2><p>rosrun turtlesim turtlesim_node</p>
+<h2 id="小乌龟运动控制："><a href="#小乌龟运动控制：" class="headerlink" title="小乌龟运动控制："></a>小乌龟运动控制：</h2><p>rosrun turtlesim turtle_teleop_key cmd_vel:&#x3D;&#x2F;turtle1&#x2F;cmd_vel</p>
+<h2 id="小乌龟节点监控："><a href="#小乌龟节点监控：" class="headerlink" title="小乌龟节点监控："></a>小乌龟节点监控：</h2><p>rostopic echo &#x2F;turtle1&#x2F;pose</p>
+<h2 id="控制一个小乌龟一直转圈："><a href="#控制一个小乌龟一直转圈：" class="headerlink" title="控制一个小乌龟一直转圈："></a>控制一个小乌龟一直转圈：</h2><p>rostopic pub -r 10 &#x2F;new_turtle&#x2F;cmd_vel geometry_msgs&#x2F;Twist “linear:<br>  x: 1.0<br>  y: 0.0<br>  z: 0.0<br>angular:<br>  x: 0.0<br>  y: 0.0<br>  z: 1.0”</p>
+<h2 id="制造一个新的小乌龟："><a href="#制造一个新的小乌龟：" class="headerlink" title="制造一个新的小乌龟："></a>制造一个新的小乌龟：</h2><p>rosservice call &#x2F;spawn 3 3 0.2 “new_turtle”</p>
+<h2 id="显示ros系统拓朴关系："><a href="#显示ros系统拓朴关系：" class="headerlink" title="显示ros系统拓朴关系："></a>显示ros系统拓朴关系：</h2><p>rqt_graph</p>
+<h2 id="启动ros"><a href="#启动ros" class="headerlink" title="启动ros"></a>启动ros</h2><p>roscore</p>
+<h2 id="启动机器人仿真系统"><a href="#启动机器人仿真系统" class="headerlink" title="启动机器人仿真系统"></a>启动机器人仿真系统</h2><p>roslaunch urdf01_rviz car.launch</p>
+<h2 id="ignition-gazebo加载world文件"><a href="#ignition-gazebo加载world文件" class="headerlink" title="ignition gazebo加载world文件"></a>ignition gazebo加载world文件</h2><p>LIBGL_ALWAYS_SOFTWARE&#x3D;0 MESA_GL_VERSION_OVERRIDE&#x3D;4.5 ign gazebo -v 4 -r ogre worlds&#x2F;factory.world</p>
+<h2 id="unbuntu升级"><a href="#unbuntu升级" class="headerlink" title="unbuntu升级"></a>unbuntu升级</h2><p>wget <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/jammy-updates/main/dist-upgrader-all/current/jammy.tar.gz">http://archive.ubuntu.com/ubuntu/dists/jammy-updates/main/dist-upgrader-all/current/jammy.tar.gz</a> tar -xzf jammy.tar.gz </p>
+<p>sudo .&#x2F;jammy –frontend&#x3D;DistUpgradeViewGtk3</p>
+<h1 id="ROS2"><a href="#ROS2" class="headerlink" title="ROS2"></a>ROS2</h1><h2 id="激活环境变量："><a href="#激活环境变量：" class="headerlink" title="激活环境变量："></a>激活环境变量：</h2><p>source &#x2F;opt&#x2F;ros&#x2F;humble&#x2F;setup.bash</p>
+<h2 id="机器人模型启动："><a href="#机器人模型启动：" class="headerlink" title="机器人模型启动："></a>机器人模型启动：</h2><p>临时制定模型：</p>
+<p>export TURTLEBOT3_MODEL&#x3D;waffle</p>
+<p>永久指定模型：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;export TURTLEBOT3_MODEL=waffle&quot;</span> &gt;&gt; ~/.bashrc<br><span class="hljs-built_in">source</span> ~/.bashrc<br></code></pre></td></tr></table></figure>
 
-<p>giscus</p>
-<script src="https://giscus.app/client.js"
-        data-repo="shuzhanboke/shuzhanboke.github.io"
-        data-repo-id="R_kgDOPIELFA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOPIELFM4Csle3"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+<p>模型渲染：</p>
+<p>ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py</p>
+<h2 id="键盘控制机器人："><a href="#键盘控制机器人：" class="headerlink" title="键盘控制机器人："></a>键盘控制机器人：</h2><p>ros2 run turtlebot3_teleop teleop_keyboard</p>
+<h2 id="开启导航，开始建图"><a href="#开启导航，开始建图" class="headerlink" title="开启导航，开始建图"></a>开启导航，开始建图</h2><p>ros2 run slam_toolbox async_slam_toolbox_node   –ros-args   –params-file ~&#x2F;slam_params.yaml   -p use_sim_time:&#x3D;true   -p scan_topic:&#x3D;&#x2F;scan   -p mode:&#x3D;mapping</p>
+<h2 id="启动slam节点"><a href="#启动slam节点" class="headerlink" title="启动slam节点"></a>启动slam节点</h2><p>ros2 launch turtlebot3_cartographer cartographer.launch.py \  use_sim_time:&#x3D;true \  publish_map_updates:&#x3D;true</p>
+<h2 id="手动启动slam节点（非常重要）："><a href="#手动启动slam节点（非常重要）：" class="headerlink" title="手动启动slam节点（非常重要）："></a>手动启动slam节点（非常重要）：</h2><p>ros2 launch slam_toolbox online_async_launch.py</p>
+<h2 id="rviz2配置"><a href="#rviz2配置" class="headerlink" title="rviz2配置"></a>rviz2配置</h2><p>ros2 run rviz2 rviz2 -d ~&#x2F;turtlebot3_nav.rviz</p>
+<h2 id="开始自主导航地图"><a href="#开始自主导航地图" class="headerlink" title="开始自主导航地图"></a>开始自主导航地图</h2><p>ros2 launch turtlebot3_navigation2 navigation2.launch.py \  use_sim_time:&#x3D;false \  map:&#x3D;~&#x2F;turtlebot3_map.yaml</p>
+<h2 id="启动流程"><a href="#启动流程" class="headerlink" title="启动流程"></a>启动流程</h2><h3 id="终端1：启动-Gazebo-仿真环境（必须首先运行）"><a href="#终端1：启动-Gazebo-仿真环境（必须首先运行）" class="headerlink" title="# 终端1：启动 Gazebo 仿真环境（必须首先运行）"></a># 终端1：启动 Gazebo 仿真环境（必须首先运行）</h3><p> ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py use_sim_time:&#x3D;True </p>
+<h3 id="终端2：启动导航-SLAM（注意-use-sim-time-必须与-Gazebo-一致）"><a href="#终端2：启动导航-SLAM（注意-use-sim-time-必须与-Gazebo-一致）" class="headerlink" title="#终端2：启动导航 + SLAM（注意 use_sim_time 必须与 Gazebo 一致）"></a>#终端2：启动导航 + SLAM（注意 use_sim_time 必须与 Gazebo 一致）</h3><p>ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:&#x3D;True slam:&#x3D;True</p>
+<h3 id="终端3：启动slam导航节点"><a href="#终端3：启动slam导航节点" class="headerlink" title="#终端3：启动slam导航节点"></a>#终端3：启动slam导航节点</h3><p>ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:&#x3D;true publish_map_updates:&#x3D;true</p>
+<p>自动处理生命周期</p>
+<h3 id="终端4：自动处理生命周期"><a href="#终端4：自动处理生命周期" class="headerlink" title="#终端4：自动处理生命周期"></a>#终端4：自动处理生命周期</h3><p>ros2 launch nav2_bringup bringup_launch.py \  use_sim_time:&#x3D;True \  map:&#x3D;&#x2F;home&#x2F;linsen&#x2F;turtlebot3_map_final.yaml \  autostart:&#x3D;True</p>
+<h3 id="路径规划中断措施"><a href="#路径规划中断措施" class="headerlink" title="路径规划中断措施"></a>路径规划中断措施</h3><p>ros2 run rqt_lifecycle rqt_lifecycle  # 图形化状态管理（生命周期可视化工具）</p>
+<p>ros2 lifecycle set &#x2F;planner_server configure  # 将节点切换到配置状态<br>ros2 lifecycle set &#x2F;planner_server activate  # 激活节点（开始运行）</p>
+<h3 id="查看地图文件"><a href="#查看地图文件" class="headerlink" title="查看地图文件"></a>查看地图文件</h3><p>eog $(dirname &#x2F;home&#x2F;linsen&#x2F;turtlebot3_map_final.yaml)&#x2F;$(grep image turtlebot3_map_final.yaml | awk ‘{print $2}’)</p>
+<h2 id="自动导航流程"><a href="#自动导航流程" class="headerlink" title="自动导航流程"></a>自动导航流程</h2><h3 id="1-坐标初始化"><a href="#1-坐标初始化" class="headerlink" title="1.坐标初始化"></a>1.坐标初始化</h3><p>ros2 topic pub &#x2F;initialpose geometry_msgs&#x2F;msg&#x2F;PoseWithCovarianceStamped “{<br>  header: {frame_id: ‘map’},<br>  pose: {pose: {position: {x: 1.0, y: 1.0}, orientation: {z: 0.0, w: 1.0}}}<br>}”</p>
+<h3 id="2-map-odom转化"><a href="#2-map-odom转化" class="headerlink" title="2.map&#x3D;&gt;odom转化"></a>2.map&#x3D;&gt;odom转化</h3><p>ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom</p>
+<h3 id="3-仿真启动"><a href="#3-仿真启动" class="headerlink" title="3.仿真启动"></a>3.仿真启动</h3><p>ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py</p>
+<h3 id="4-导航、地图初始化"><a href="#4-导航、地图初始化" class="headerlink" title="4.导航、地图初始化"></a>4.导航、地图初始化</h3><p>ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:&#x3D;True   map:&#x3D;$HOME&#x2F;turtlebot3_map_final.yaml</p>
+
                 
               </div>
             
@@ -300,6 +321,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" class="category-chain-item">技术分享</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/ROS/" class="print-no-link">#ROS</a>
+      
+    </div>
   
 </div>
 
@@ -309,8 +358,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://shuzhanboke.github.io/2025/07/15/giscus/</div>
+      <div>ROS系统环境搭建</div>
+      <div>https://shuzhanboke.github.io/2024/07/15/四足机器人独立开发/ROS系统搭建/</div>
     </div>
     <div class="license-meta">
       
@@ -322,7 +371,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年7月15日</div>
+          <div>2024年7月15日</div>
         </div>
       
       
@@ -354,12 +403,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/07/15/%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95jvm%E5%91%BD%E4%BB%A4/" title="JVM远程调试">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">JVM远程调试</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/07/07/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/giscus/" title="">
-                        <span class="hidden-mobile"></span>
+                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/" title="ros仿真系统搭建">
+                        <span class="hidden-mobile">ros仿真系统搭建</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
