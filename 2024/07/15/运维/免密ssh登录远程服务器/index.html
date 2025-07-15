@@ -19,22 +19,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="linux        全局搜索   java ps -ef | grep java   文件夹授权 chmod +x   脚本转换 dos2unix  脚本名   强制终止进程 pkill -9 -f “webrtc-streamer -H 0.0.0.0:8003”   查看端口占用信息 sudo lsof -i :8003   查看实时日志 tail -f   查看限定数量的日志 tail">
+    <meta name="description" content="免密ssh连接远程服务器一、使用公钥验证1.本地服务器生成公钥和私钥ssh-keygen -t rsa -b 40962.文件授权chmod 600 ~&#x2F;.ssh&#x2F;id_rsa chmod 644 ~&#x2F;.ssh&#x2F;id_rsa.pu3.复制公钥内容cat ~&#x2F;.ssh&#x2F;id_rsa.pub4.登录远程服务器ssh username@remote_server5.创建 .ssh 目录（如果不存在）：在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用命令">
-<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="免密ssh连接远程服务器">
+<meta property="og:url" content="https://shuzhanboke.github.io/2024/07/15/%E8%BF%90%E7%BB%B4/%E5%85%8D%E5%AF%86ssh%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="linux        全局搜索   java ps -ef | grep java   文件夹授权 chmod +x   脚本转换 dos2unix  脚本名   强制终止进程 pkill -9 -f “webrtc-streamer -H 0.0.0.0:8003”   查看端口占用信息 sudo lsof -i :8003   查看实时日志 tail -f   查看限定数量的日志 tail">
+<meta property="og:description" content="免密ssh连接远程服务器一、使用公钥验证1.本地服务器生成公钥和私钥ssh-keygen -t rsa -b 40962.文件授权chmod 600 ~&#x2F;.ssh&#x2F;id_rsa chmod 644 ~&#x2F;.ssh&#x2F;id_rsa.pu3.复制公钥内容cat ~&#x2F;.ssh&#x2F;id_rsa.pub4.登录远程服务器ssh username@remote_server5.创建 .ssh 目录（如果不存在）：在">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-15T02:41:19.000Z">
-<meta property="article:modified_time" content="2025-07-15T05:58:23.770Z">
+<meta property="article:modified_time" content="2025-07-15T08:32:39.648Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="命令行">
+<meta property="article:tag" content="服务器">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>常用命令 - Hexo</title>
+  <title>免密ssh连接远程服务器 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="常用命令"></span>
+            <span id="subtitle" data-typed-text="免密ssh连接远程服务器"></span>
           
         </div>
 
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          307 字
+          506 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -271,144 +271,29 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">常用命令</h1>
+            <h1 id="seo-header">免密ssh连接远程服务器</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a><strong>linux</strong></h1><table>
-<thead>
-<tr>
-<th align="left"></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">全局搜索   java</td>
-<td>ps -ef | grep java</td>
-</tr>
-<tr>
-<td align="left">文件夹授权</td>
-<td>chmod +x</td>
-</tr>
-<tr>
-<td align="left">脚本转换</td>
-<td>dos2unix  脚本名</td>
-</tr>
-<tr>
-<td align="left">强制终止进程</td>
-<td>pkill -9 -f “webrtc-streamer -H 0.0.0.0:8003”</td>
-</tr>
-<tr>
-<td align="left">查看端口占用信息</td>
-<td>sudo lsof -i :8003</td>
-</tr>
-<tr>
-<td align="left">查看实时日志</td>
-<td>tail -f</td>
-</tr>
-<tr>
-<td align="left">查看限定数量的日志</td>
-<td>tail -n 5  webrtc.log</td>
-</tr>
-<tr>
-<td align="left">解压gz文件</td>
-<td>tar -xzvf webrtc-streamer-v0.7.0-Linux-arm64-Release.tar.gz</td>
-</tr>
-<tr>
-<td align="left">查看当前ip</td>
-<td>ifconfig</td>
-</tr>
-<tr>
-<td align="left">查看网络连接</td>
-<td>telnet 192.168.31.69 8080</td>
-</tr>
-<tr>
-<td align="left">发送 POST 请求</td>
-<td>curl -v -X POST -H “Content-Type: application&#x2F;json” -d ‘{“command”:”start”}’ <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">保存响应内容到文件</td>
-<td>curl -v -o response.txt <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">仅显示 HTTP 状态码</td>
-<td>curl -s -o &#x2F;dev&#x2F;null -w “%{http_code}” <a target="_blank" rel="noopener" href="http://192.168.31.69:8082/robotServer">http://192.168.31.69:8082/robotServer</a></td>
-</tr>
-<tr>
-<td align="left">重新加载服务</td>
-<td>sudo systemctl daemon-reload</td>
-</tr>
-<tr>
-<td align="left">检查程序日志</td>
-<td>journalctl -u robot_server -b</td>
-</tr>
-<tr>
-<td align="left">卸载服务</td>
-<td>sudo systemctl disable robot_server                                                                                      sudo rm&#x2F;etc&#x2F;systemd&#x2F;system&#x2F;robot_server.service</td>
-</tr>
-<tr>
-<td align="left">查看磁盘空间</td>
-<td>df -h</td>
-</tr>
-<tr>
-<td align="left">分析磁盘使用情况</td>
-<td>sudo du -h –max-depth&#x3D;1 &#x2F; | sort -h（逐级列出 <code>/</code> 根目录下各子目录的占用空间）</td>
-</tr>
-<tr>
-<td align="left">显示文件详细信息</td>
-<td>ls -l</td>
-</tr>
-<tr>
-<td align="left">强制覆盖原有软连接</td>
-<td>ln -sf &#x2F;home&#x2F;ysc&#x2F;jy_cog&#x2F;system&#x2F;map  &#x2F;home&#x2F;ysc&#x2F;jy_cog&#x2F;system&#x2F;maps&#x2F;ProjectName-LocationName-20250607-175711</td>
-</tr>
-</tbody></table>
-<h1 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h1><table>
-<thead>
-<tr>
-<th>强制终止进程</th>
-<th>taskkill -f -im nginx.exe</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>查看nginx进程</td>
-<td>tasklist | findstr “nginx”</td>
-</tr>
-<tr>
-<td>查看端口情况</td>
-<td>netstat -ano   |findstr 8004</td>
-</tr>
-<tr>
-<td>vnc（win）</td>
-<td>node websockify.js 8080 127.0.0.1:5900 –web “C:\Users\linsen\Desktop\java\gongju\websockify\noVNC-master”</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h1><h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1>
+                <h1 id="免密ssh连接远程服务器"><a href="#免密ssh连接远程服务器" class="headerlink" title="免密ssh连接远程服务器"></a>免密ssh连接远程服务器</h1><h2 id="一、使用公钥验证"><a href="#一、使用公钥验证" class="headerlink" title="一、使用公钥验证"></a>一、使用公钥验证</h2><h4 id="1-本地服务器生成公钥和私钥"><a href="#1-本地服务器生成公钥和私钥" class="headerlink" title="1.本地服务器生成公钥和私钥"></a>1.本地服务器生成公钥和私钥</h4><h6 id="ssh-keygen-t-rsa-b-4096"><a href="#ssh-keygen-t-rsa-b-4096" class="headerlink" title="ssh-keygen -t rsa -b 4096"></a><code>ssh-keygen -t rsa -b 4096</code></h6><h4 id="2-文件授权"><a href="#2-文件授权" class="headerlink" title="2.文件授权"></a>2.文件授权</h4><p><code>chmod 600 ~/.ssh/id_rsa</code></p>
+<h6 id="chmod-644-ssh-id-rsa-pu"><a href="#chmod-644-ssh-id-rsa-pu" class="headerlink" title="chmod 644 ~/.ssh/id_rsa.pu"></a><code>chmod 644 ~/.ssh/id_rsa.pu</code></h6><h4 id="3-复制公钥内容"><a href="#3-复制公钥内容" class="headerlink" title="3.复制公钥内容"></a>3.复制公钥内容</h4><h6 id="cat-ssh-id-rsa-pub"><a href="#cat-ssh-id-rsa-pub" class="headerlink" title="cat ~/.ssh/id_rsa.pub"></a><code>cat ~/.ssh/id_rsa.pub</code></h6><h4 id="4-登录远程服务器"><a href="#4-登录远程服务器" class="headerlink" title="4.登录远程服务器"></a>4.登录远程服务器</h4><h6 id="ssh-username-remote-server"><a href="#ssh-username-remote-server" class="headerlink" title="ssh username@remote_server"></a><code>ssh username@remote_server</code></h6><h4 id="5-创建-ssh-目录（如果不存在）：在远程服务器的用户主目录中，使用以下命令创建-ssh-目录："><a href="#5-创建-ssh-目录（如果不存在）：在远程服务器的用户主目录中，使用以下命令创建-ssh-目录：" class="headerlink" title="5.创建 .ssh 目录（如果不存在）：在远程服务器的用户主目录中，使用以下命令创建 .ssh 目录："></a>5.创建 <code>.ssh</code> 目录（如果不存在）：在远程服务器的用户主目录中，使用以下命令创建 <code>.ssh</code> 目录：</h4><h6 id="mkdir-p-ssh"><a href="#mkdir-p-ssh" class="headerlink" title="mkdir -p ~/.ssh"></a><code>mkdir -p ~/.ssh</code></h6><h4 id="6-编辑-authorized-keys-文件：使用以下命令编辑或创建-authorized-keys-文件："><a href="#6-编辑-authorized-keys-文件：使用以下命令编辑或创建-authorized-keys-文件：" class="headerlink" title="6.编辑 authorized_keys 文件：使用以下命令编辑或创建 authorized_keys 文件："></a>6.编辑 <code>authorized_keys</code> 文件：使用以下命令编辑或创建 <code>authorized_keys</code> 文件：</h4><h6 id="nano-ssh-authorized-keys"><a href="#nano-ssh-authorized-keys" class="headerlink" title="nano ~/.ssh/authorized_keys"></a><code>nano ~/.ssh/authorized_keys</code></h6><h4 id="7-如果文件已存在，请将光标移到文件的末尾。如果文件不存在，则创建一个新文件并打开编辑器。"><a href="#7-如果文件已存在，请将光标移到文件的末尾。如果文件不存在，则创建一个新文件并打开编辑器。" class="headerlink" title="7.如果文件已存在，请将光标移到文件的末尾。如果文件不存在，则创建一个新文件并打开编辑器。"></a>7.如果文件已存在，请将光标移到文件的末尾。如果文件不存在，则创建一个新文件并打开编辑器。</h4><h4 id="8-将公钥粘贴到-authorized-keys-文件：将之前复制的公钥内容粘贴到打开的-authorized-keys-文件中。确保将整个公钥粘贴为一行，并保存文件。"><a href="#8-将公钥粘贴到-authorized-keys-文件：将之前复制的公钥内容粘贴到打开的-authorized-keys-文件中。确保将整个公钥粘贴为一行，并保存文件。" class="headerlink" title="8.将公钥粘贴到 authorized_keys 文件：将之前复制的公钥内容粘贴到打开的 authorized_keys 文件中。确保将整个公钥粘贴为一行，并保存文件。"></a>8.将公钥粘贴到 <code>authorized_keys</code> 文件：将之前复制的公钥内容粘贴到打开的 <code>authorized_keys</code> 文件中。确保将整个公钥粘贴为一行，并保存文件。</h4><h4 id="9-将公钥粘贴到-authorized-keys-文件：将之前复制的公钥内容粘贴到打开的-authorized-keys-文件中。确保将整个公钥粘贴为一行，并保存文件。"><a href="#9-将公钥粘贴到-authorized-keys-文件：将之前复制的公钥内容粘贴到打开的-authorized-keys-文件中。确保将整个公钥粘贴为一行，并保存文件。" class="headerlink" title="9.将公钥粘贴到 authorized_keys 文件：将之前复制的公钥内容粘贴到打开的 authorized_keys 文件中。确保将整个公钥粘贴为一行，并保存文件。"></a>9.将公钥粘贴到 <code>authorized_keys</code> 文件：将之前复制的公钥内容粘贴到打开的 <code>authorized_keys</code> 文件中。确保将整个公钥粘贴为一行，并保存文件。</h4><h4 id="10-退出远程服务器：使用以下命令退出远程服务器。"><a href="#10-退出远程服务器：使用以下命令退出远程服务器。" class="headerlink" title="10.退出远程服务器：使用以下命令退出远程服务器。"></a>10.退出远程服务器：使用以下命令退出远程服务器。</h4><h6 id="exit"><a href="#exit" class="headerlink" title="exit"></a><code>exit</code></h6><h4 id="11-测试-SSH-密钥身份验证"><a href="#11-测试-SSH-密钥身份验证" class="headerlink" title="11.测试 SSH 密钥身份验证"></a>11.测试 SSH 密钥身份验证</h4><h6 id="ssh-username-remote-server-1"><a href="#ssh-username-remote-server-1" class="headerlink" title="ssh username@remote_server"></a><code>ssh username@remote_server</code></h6><h2 id="二、高级选项：使用-SSH-代理"><a href="#二、高级选项：使用-SSH-代理" class="headerlink" title="二、高级选项：使用 SSH 代理"></a>二、高级选项：使用 SSH 代理</h2><p>SSH 代理是一种方便的方法，允许您在通过 SSH 连接到远程服务器时使用本地机器上的 SSH 密钥。这对于跳板服务器等复杂的网络配置特别有用。</p>
+<p>以下是使用 SSH 代理的步骤：</p>
+<h3 id="1-在本地机器上编辑-SSH-配置文件：使用以下命令编辑-SSH-配置文件："><a href="#1-在本地机器上编辑-SSH-配置文件：使用以下命令编辑-SSH-配置文件：" class="headerlink" title="1.在本地机器上编辑 SSH 配置文件：使用以下命令编辑 SSH 配置文件："></a>1.在本地机器上编辑 SSH 配置文件：使用以下命令编辑 SSH 配置文件：</h3><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">nano ~<span class="hljs-regexp">/.ssh/</span>config<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-在文件中添加以下内容："><a href="#2-在文件中添加以下内容：" class="headerlink" title="2.在文件中添加以下内容："></a>2.在文件中添加以下内容：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">Host</span> remote_server<br>    ForwardAgent <span class="hljs-literal">yes</span><br></code></pre></td></tr></table></figure>
+
+<p>将 <code>remote_server</code> 替换为远程服务器的别名或 IP 地址。</p>
+<ol>
+<li>保存并关闭文件。</li>
+<li>连接到跳板服务器：如果您使用了跳板服务器，可以使用以下命令连接到远程服务器：</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">ssh -<span class="hljs-selector-tag">A</span> username<span class="hljs-keyword">@jump_server</span><br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>从跳板服务器连接到目标远程服务器：在跳板服务器上，使用以下命令连接到目标远程服务器：</li>
+</ol>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">ssh</span> username<span class="hljs-variable">@remote_server</span><br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -441,7 +326,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="print-no-link">#命令行</a>
+        <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="print-no-link">#服务器</a>
       
     </div>
   
@@ -453,8 +338,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>常用命令</div>
-      <div>https://shuzhanboke.github.io/2024/07/15/日常开发/常用命令/</div>
+      <div>免密ssh连接远程服务器</div>
+      <div>https://shuzhanboke.github.io/2024/07/15/运维/免密ssh登录远程服务器/</div>
     </div>
     <div class="license-meta">
       
@@ -498,21 +383,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/15/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/%E5%9B%9B%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A1%AC%E4%BB%B6%E6%94%AF%E6%8C%81/" title="四足机器人仿真环境硬件支持">
+                      <a href="/2024/07/15/%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91/%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95jvm%E5%91%BD%E4%BB%A4/" title="JVM远程调试">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">四足机器人仿真环境硬件支持</span>
+                        <span class="hidden-mobile">JVM远程调试</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2024/07/15/%E5%B7%A5%E5%85%B7/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" title="常用命令">
-                        <span class="hidden-mobile">常用命令</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
